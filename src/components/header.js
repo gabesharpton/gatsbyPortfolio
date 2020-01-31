@@ -1,42 +1,25 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
+// import { Link } from "gatsby"
+// import PropTypes from "prop-types"
 import React from "react"
+import './style/header.css'
+import Image from './image'
+// import styled from 'styled-components'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { MdEmail  } from 'react-icons/md'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+
+const Header = () => (
+  <div>
+    <h1 id="title" >Gabriel Sharpton || Full-Stack Developer</h1>
+    <Image style={{height: `350px`, width: `300px`}} />
+       
+       
+       <a id='linkedin-profile' href='https://www.linkedin.com/in/gabesharpton/'><FaLinkedin /></a>
+        <a id="github-profile" href="https://github.com/gabesharpton"> <FaGithub /> </a>
+        <a id='email-address' href="mailto:Gabriel.sharpton@gmail.com"><MdEmail /></a>
     </div>
-  </header>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+div{
+    height: 100%;
+    background-color: cornflowerblue;
+    
+}
+div.gatsby-image-wrapper {
+    height: 50vmin;
+    width: 50vmin;
+    margin: 5% auto;
+    border-radius: 50%;
+    border: 0.5vw solid salmon;
+}
+
+h1#title {
+        font-size: 4.5vmax;
+    }
+a {
+    text-decoration: none;
+    font-size: 8vmax;
+}
+a#linkedin-profile {
+    color: deepskyblue;
+}
+a#github-profile {
+    color: black;
+}
+a#email-address {
+    color: red;
+}
