@@ -12,7 +12,7 @@ import styled from "styled-components"
 import AboutMe from './aboutMe'
 import Languages from './languages'
 import Header from "./header"
-import Sidebar from "./sidebar"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -39,7 +39,7 @@ console.log(data)
 
   return (
       <LayoutBody>
-        <Sidebar />
+        
         <Header />
         <AboutMe />
         <Languages />
