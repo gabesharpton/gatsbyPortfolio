@@ -39,8 +39,8 @@ const Languages = () => (
   <Lang id="languages">
       <Intro>My favorite languages and frameworks:</Intro>
 
+    <h3>Front end</h3>
       <Front id='front-end'>
-    
     <DiJavascript1 className="icons" style={{color: 'black'}}/>
     <DiHtml5 className="icons" style={{color: 'blue'}}/>
     <DiCss3 className="icons" style={{color: 'red'}} />
@@ -51,6 +51,7 @@ const Languages = () => (
     <FaLess className="icons" style={{color: 'darkblue'}}/>
     <DiPhotoshop className="icons" style={{color: 'purple'}}/>
       </Front>
+          <h3>Back end</h3>
       <Back id="back-end">
 <DiMongodb className="icons" style={{color: 'lightgreen'}}/>
 <DiDjango className="icons" style={{color: 'black'}}/>
