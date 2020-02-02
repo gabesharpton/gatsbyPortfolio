@@ -12,7 +12,6 @@ import styled from "styled-components"
 import AboutMe from './aboutMe'
 import Languages from './languages'
 import Header from "./header"
-
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -39,7 +38,6 @@ console.log(data)
 
   return (
       <LayoutBody>
-        
         <Header />
         <AboutMe />
         <Languages />
