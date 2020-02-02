@@ -9,7 +9,7 @@ import React from "react"
 // import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-
+import AboutMe from './aboutMe'
 import Header from "./header"
 import "./layout.css"
 
@@ -38,7 +38,7 @@ console.log(data)
   return (
       <LayoutBody>
         <Header />
-        <p>THis is a test</p>
+        <AboutMe />
         </LayoutBody>
   )
 }

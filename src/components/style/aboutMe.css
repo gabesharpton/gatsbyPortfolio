@@ -1,0 +1,17 @@
+body {
+    height: auto;
+}
+div#initial {
+    padding: 8%;
+    background-color: mintcream;
+    display: flex;
+    font-family: "Acme", sans-serif;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+ p {
+   width: 70%;
+   font-size: 2vmax;
+   line-height: 4vmax;
+ }
+ 
