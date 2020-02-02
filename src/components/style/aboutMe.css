@@ -13,5 +13,7 @@ div#initial {
    width: 70%;
    font-size: 2vmax;
    line-height: 4vmax;
+   text-align: left;
+   padding-left: 15%
  }
  

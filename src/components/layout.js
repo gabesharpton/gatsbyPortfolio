@@ -10,6 +10,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import AboutMe from './aboutMe'
+import Languages from './languages'
 import Header from "./header"
 import "./layout.css"
 
@@ -39,6 +40,7 @@ console.log(data)
       <LayoutBody>
         <Header />
         <AboutMe />
+        <Languages />
         </LayoutBody>
   )
 }
