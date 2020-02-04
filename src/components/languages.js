@@ -21,7 +21,7 @@ const Front = styled.div`
     align-content: center;
     grid-template-columns: auto auto auto;
     animation: 0;
-    padding-left: 20%;
+    
     font-size: 5rem;
 
     `
@@ -31,7 +31,7 @@ const Back = styled.div`
     display: grid;
     align-content: center;
     grid-template-columns: auto auto auto;
-    padding-left: 20%;
+    
     font-size: 5rem;
 `
 
@@ -39,19 +39,29 @@ const Languages = () => (
   <Lang id="languages">
       <Intro>My favorite languages and frameworks:</Intro>
 
-    <h3>Front end</h3>
+    <h3 style={{fontFamily: 'bangers',letterSpacing: 1.5, fontSize: 55}}>Front end</h3>
       <Front id='front-end'>
+
+    <div>
+        <h5 style={{fontFamily: 'valera+round'}}>Javascript</h5>
     <DiJavascript1 className="icons" style={{color: 'black'}}/>
+    </div>
+    <div>
+        <h5 style={{fontFamily: 'valera+round'}}>HTML 5</h5>
     <DiHtml5 className="icons" style={{color: 'blue'}}/>
+    </div>
+    <div>
+        <h5 style={{fontFamily: 'valera+round'}}>CSS</h5>
     <DiCss3 className="icons" style={{color: 'red'}} />
-    <DiReact className="icons" style={{color: 'blue'}} />
+    </div>
+    <DiReact className="icons" style={{color: '#00CED1'}} />
     <DiSass className="icons" style={{color: 'magenta'}}/>
-    <FaVuejs className="icons" style={{color: 'aquamarine'}}/>
+    <FaVuejs className="icons" style={{color: 'mediumaquamarine'}}/>
     <FaBootstrap className="icons" style={{color: 'purple'}}/>
     <FaLess className="icons" style={{color: 'darkblue'}}/>
     <DiPhotoshop className="icons" style={{color: 'purple'}}/>
       </Front>
-          <h3>Back end</h3>
+          <h3 style={{fontFamily: 'bangers', letterSpacing: 1.5, fontSize: 55}}>Back end</h3>
       <Back id="back-end">
 <DiMongodb className="icons" style={{color: 'lightgreen'}}/>
 <DiDjango className="icons" style={{color: 'black'}}/>

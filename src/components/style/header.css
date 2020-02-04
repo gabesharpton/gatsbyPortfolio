@@ -5,12 +5,7 @@ body, html {
     
 }
 
-div{
-    height: 100%;
-    background-color: cornflowerblue;
-    text-align: center
-    
-}
+
 div.gatsby-image-wrapper {
     height: 50vmin;
     width: 50vmin;
