@@ -12,6 +12,7 @@ import styled from "styled-components"
 import AboutMe from './aboutMe'
 import Languages from './languages'
 import Header from "./header"
+import Projects from "./projects"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -41,7 +42,8 @@ console.log(data)
         <Header />
         <AboutMe />
         <Languages />
-        </LayoutBody>
+        <Projects />
+      </LayoutBody>
   )
 }
 
