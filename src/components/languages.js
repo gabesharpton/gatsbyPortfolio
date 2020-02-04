@@ -1,5 +1,4 @@
 import React from "react";
-import './style/languages.css';
 import styled from 'styled-components';
 import { DiJavascript1, DiHtml5, DiCss3, DiReact, DiSass, DiPhotoshop, DiMongodb, DiDjango, DiNodejs, DiMysql, DiPostgresql } from 'react-icons/di'
 import {FaVuejs, FaBootstrap, FaLess} from 'react-icons/fa'
@@ -21,7 +20,6 @@ const Front = styled.div`
     align-content: center;
     grid-template-columns: auto auto auto;
     animation: 0;
-    
     font-size: 5rem;
 
     `
@@ -31,43 +29,87 @@ const Back = styled.div`
     display: grid;
     align-content: center;
     grid-template-columns: auto auto auto;
-    
     font-size: 5rem;
 `
+
+const Stack = styled.h3`
+font-family: bangers;
+letter-spacing: 1.5;
+font-size: 3rem
+`;
+
+const LName = styled.h5`
+    font-family: valera+round;
+    margin-top: 20px;
+`;
 
 const Languages = () => (
   <Lang id="languages">
       <Intro>My favorite languages and frameworks:</Intro>
 
-    <h3 style={{fontFamily: 'bangers',letterSpacing: 1.5, fontSize: 55}}>Front end</h3>
+    <Stack>Front end</Stack>
       <Front id='front-end'>
 
     <div>
-        <h5 style={{fontFamily: 'valera+round'}}>Javascript</h5>
     <DiJavascript1 className="icons" style={{color: 'black'}}/>
+        <LName>Javascript</LName>
     </div>
     <div>
-        <h5 style={{fontFamily: 'valera+round'}}>HTML 5</h5>
     <DiHtml5 className="icons" style={{color: 'blue'}}/>
+        <LName>HTML</LName>
     </div>
     <div>
-        <h5 style={{fontFamily: 'valera+round'}}>CSS</h5>
     <DiCss3 className="icons" style={{color: 'red'}} />
+        <LName>CSS</LName>
     </div>
+    <div>
     <DiReact className="icons" style={{color: '#00CED1'}} />
+    <LName>React</LName>
+    </div>
+    <div>
     <DiSass className="icons" style={{color: 'magenta'}}/>
+    <LName>SASS</LName>
+    </div>
+    <div>
     <FaVuejs className="icons" style={{color: 'mediumaquamarine'}}/>
+    <LName>Vue</LName>
+    </div>
+    <div>
     <FaBootstrap className="icons" style={{color: 'purple'}}/>
+    <LName>Bootstrap</LName>
+    </div>
+    <div>
     <FaLess className="icons" style={{color: 'darkblue'}}/>
+    <LName>LESS</LName>
+    </div>
+    <div>
     <DiPhotoshop className="icons" style={{color: 'purple'}}/>
+    <LName>Photoshop</LName>
+    </div>
+
       </Front>
-          <h3 style={{fontFamily: 'bangers', letterSpacing: 1.5, fontSize: 55}}>Back end</h3>
+         <Stack style={{paddingTop: 25}}>Back end</Stack>
       <Back id="back-end">
+      <div>
 <DiMongodb className="icons" style={{color: 'lightgreen'}}/>
+    <LName>MongoDB</LName>
+    </div>
+    <div>
 <DiDjango className="icons" style={{color: 'black'}}/>
+    <LName>DJango</LName>
+    </div>
+<div>
 <DiNodejs className="icons" style={{color: 'chartreuse'}}/>
+    <LName>Node.JS</LName>
+    </div>
+<div>
 <DiPostgresql className="icons" style={{color: 'darkblue'}}/>
+    <LName>PostreSQL</LName>
+    </div>
+<div>
 <DiMysql className="icons" style={{color: 'darkslateblue'}}/>
+    <LName>MySQL</LName>
+    </div>
       </Back>
    
     </Lang>

@@ -15,7 +15,7 @@ const Head = styled.div`
 
 const Header = () => (
   <Head>
-    <h1 id="title" >Gabriel Sharpton || Full-Stack Developer</h1>
+    <h1 id="title" style={{paddingTop: 20, color: '#DD4124'}} >Gabriel Sharpton || Full-Stack Developer</h1>
     <Image style={{height: `350px`, width: `300px`}} />
        
        
