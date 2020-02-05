@@ -8,7 +8,7 @@ export default ({ data }) => (
       <h1>Hello gatsby-image</h1>
       <div>
         {data.allImageSharp.edges.map(edge => 
-          <Img fluid={edge.node.fluid} />
+          <Img fluid={edge.node.fluid} alt={edge.node.id} />
         )}
       </div>
     </div>
@@ -27,6 +27,7 @@ export default ({ data }) => (
         }
       }
     }`
+
 
 // const projectImage = () => {
 //   const data = useStaticQuery(graphql`
