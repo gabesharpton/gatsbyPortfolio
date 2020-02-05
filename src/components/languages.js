@@ -21,7 +21,8 @@ const Front = styled.div`
     grid-template-columns: auto auto auto;
     animation: 0;
     font-size: 5rem;
-
+    border: 1px solid black;
+    margin: 1%;
     `
 
 const Back = styled.div`
@@ -30,6 +31,8 @@ const Back = styled.div`
     align-content: center;
     grid-template-columns: auto auto auto;
     font-size: 5rem;
+    border: 1px solid black;
+    margin: 1%;
 `
 
 const Stack = styled.h3`
@@ -43,6 +46,8 @@ const LName = styled.h5`
     margin-top: 20px;
 `;
 
+
+
 const Languages = () => (
   <Lang id="languages">
       <Intro>My favorite languages and frameworks:</Intro>
@@ -55,7 +60,7 @@ const Languages = () => (
         <LName>Javascript</LName>
     </div>
     <div>
-    <DiHtml5 className="icons" style={{color: 'blue'}}/>
+    <DiHtml5 className="icons" style={{color: 'darkblue'}}/>
         <LName>HTML</LName>
     </div>
     <div>
