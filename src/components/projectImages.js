@@ -28,23 +28,3 @@ export default ({ data }) => (
       }
     }`
 
-
-// const projectImage = () => {
-//   const data = useStaticQuery(graphql`
-//     query {
-//       allFile(filter: { extension: { eq: "pdf" } }){
-//         edges{
-//             node {
-//                 publicURL
-//                 name
-//             }
-//         }
-//       }
-          
-//     }
-//   `)
-
-//   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-// }
-
-//export default projectImage
