@@ -20,7 +20,7 @@ export default ({ data }) => (
         edges {
           node {
             id
-            fluid(maxWidth: 200, maxHeight: 200) {
+            fluid(maxWidth: 350, maxHeight: 350) {
               ...GatsbyImageSharpFluid
             }
           }
