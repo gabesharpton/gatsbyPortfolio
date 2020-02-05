@@ -16,8 +16,9 @@ import Modal from 'react-modal';
 const PROJECTS = styled.div`
     display: grid;
     align-content: center;
+    grid-template-columns: auto ;
     text-align: center;
-    background-color: ivory;
+    background-color: mintcream;
     justify-content: space-evenly;
     padding-left: 8%;
     padding-right: 8%;
@@ -28,13 +29,22 @@ const PROJECTS = styled.div`
 `;
 const PROJECT = styled.div`
     border: 2px solid black;
+    background-color: ivory;
     padding: 3%;
     margin: 3%;
-        a{  font-size: 4.5vw;
+    
+        a{  font-size: 4.5vmin;
             text-decoration: underline;
-            h2 {font-size: 5vw;}
+            h2 {font-size: 4.5vmin;}
         }
     
+`;
+const PROJ = styled.h1`
+text-align: center;
+background-color: mintcream;
+margin-bottom: 0;
+padding: 3%;
+
 `;
 
 
@@ -54,9 +64,9 @@ const Projects = () =>{
           );
         }
 return (
+    <>
+        <PROJ>Projects!</PROJ>
     <PROJECTS>
-        <h1>Projects!</h1>
-        
     <PROJECT id='moviedb'>
     <ToggleContent
       toggle={show => <div>
@@ -86,8 +96,17 @@ return (
       content={hide => (
         <Modal
         isOpen={true}>
-          
-          <p>Hello</p>
+          <h3>Gatsby Blog</h3>
+          <p>This is a blog site I made while learning Gatsby. It really opened my eyes to how great Gatsby can be for making dynamically generated pages. All of the posts on the site are ones from my Dev.to blog site and they are all markdown files. Which made it even easier for me because the Dev.to blogs are written in markdown!</p>
+          <p>I also learned GraphQL and use it to generate a new page for each markdown file in the folder posts. Gatsby will be my go to for any SPA personal projects after working with this. And you gotta love the speed of that Gatsby Link!</p>
+          <h2>Tech used</h2>
+          <ul>
+              <li>Gatsby</li>
+              <li>React</li>
+              <li>GraphQL</li>
+          </ul>
+          <a href=""><h2>Check out my source code here!</h2></a>
+          <a href=""><h2>Check out the live app here!</h2></a>
                     <button onClick={hide}>Close</button>
         </Modal>
       )}
@@ -184,6 +203,7 @@ return (
                 </Modal>
     </PROJECT> */}
   </PROJECTS>
+  </>
 )}
 console.log(Bagjav)
 

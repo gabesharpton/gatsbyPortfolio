@@ -13,6 +13,7 @@ import AboutMe from './aboutMe'
 import Languages from './languages'
 import Header from "./header"
 import Projects from "./projects"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -43,6 +44,7 @@ console.log(data)
         <AboutMe />
         <Languages />
         <Projects />
+        <Footer />
       </LayoutBody>
   )
 }
