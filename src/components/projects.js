@@ -11,7 +11,15 @@ import movieDB from "../images/movieDB.png"
 import Modal from 'react-modal';
 //import { Link } from 'gatsby'
 
+const MODAL = styled.div`
 
+position: fixed;
+top: 1px;
+  padding: 12px;
+  background-color: white;
+  border: 1px solid grey;
+  margin: 0px;
+`;
 
 
 const PROJECTS = styled.div`
@@ -38,55 +46,105 @@ const PROJECT = styled.div`
     
 `;
 
+
+
 const Projects = () =>{ 
 
-    const [modalOpen, setModalOpen ] = useState(false)
-    const modalCloseTimeout = 300;
-    const closeModal = () => {
-        setModalOpen(false);
-        setTimeout( modalCloseTimeout)
-    }
-    const renderProjects = which => {
-        return 
-    }
-    console.log(<PROJECT/>)
+    // const [modalOpen, setModalOpen ] = useState(false)
+    // const modalCloseTimeout = 300;
+    // const closeModal = () => {
+    //     setModalOpen(false);
+    //     setTimeout( modalCloseTimeout)
+    // }
+    
+    // console.log(<PROJECT/>)
+
+    const ToggleContent = ({toggle, content }) => {
+        const [isOpen, setIsOpen] = useState(false);
+          const hide = () => setIsOpen(false);
+          const show = () => setIsOpen(true);
+        
+          return (
+            <>
+              {toggle(show)}
+              {isOpen && content(hide)}
+            </>
+          );
+        }
 return (
     <PROJECTS>
         <h1>Projects!</h1>
         
     <PROJECT id='moviedb'>
-        <a href="https://planets-ebag.glitch.me/" target="_blank" rel="noopener noreferrer" ><h2>Movie DB</h2></a>
-        <img src={movieDB} alt="MovieDB"></img>
-        <button onClick={setModalOpen}>See more</button>
-           
-            <Modal
-            
-                isOpen={modalOpen}
-                onRequestClose={closeModal}
-                // id={"moviedb"}
-                
-                parentSelector={() => document.getElementById("moviedb")}>
-                    <img src={movieDB} alt="MovieDB"></img>
+    <ToggleContent
+      toggle={show => <div>
+            <a href="https://planets-ebag.glitch.me/" target="_blank" rel="noopener noreferrer" ><h2>Movie DB</h2></a>
+            <img src={movieDB} alt="MovieDB"></img>
+            <button onClick={show}>See more</button>
+      </div>}
+      content={hide => (
+        <Modal
+        isOpen={true}>
+          {/* <img src={movieDB} alt="MovieDB"></img> */}
+          <h2>Movie DB</h2>
+          <button onClick={hide}>Close</button>
+        </Modal>
+      )}
+    />
+    </PROJECT>
+    <PROJECT>
+    <ToggleContent
+      toggle={show => <div>
+            <a href="https://planets-ebag.glitch.me/" target="_blank" rel="noopener noreferrer" ><h2>Movie DB</h2></a>
+            <img src={movieDB} alt="MovieDB"></img>
+            <button onClick={show}>See more</button>
+      </div>}
+      content={hide => (
+        <Modal
+        isOpen={true}>
+          {/* <img src={movieDB} alt="MovieDB"></img> */}
                     <h1>Hi</h1>
                     <p>He drove out the man; and at the time of the evening breeze, and the man said, This at last is bone of my flesh; this one shall be called Woman, for out of Eden to water the whole face of the field and every bird of the air and over every living thing that moves upon the ground of every kind. And God saw that it was a delight to the woman, Did God say, 'You shall not eat of it,' cursed is the ground of every tree of the garden. But of the tree about which I commanded you, 'You shall not eat from any tree in the earth and no herb of the first is Pishon; it is the ground because of you; in toil you shall eat the plants of the field. The earth of every tree of the garden. God saw that the LORD God said, It is not good that the man he made into a woman and brought her to the woman, What is this that you have done? The woman said, The woman whom you gave to be with me, she gave me fruit from the man he made into a woman and brought her to the man.</p>
-                    <button onClick={closeModal}>Close</button>
-            </Modal>
+                    <button onClick={hide}>Close</button>
+        </Modal>
+      )}
+    />
+        
+           
 
     </PROJECT>
     <PROJECT id='solarsystem'>
-        <a href="https://planets-ebag.glitch.me/" target="_blank" rel="noopener noreferrer" ><h2>Solar System VR</h2></a>
+
+    <ToggleContent
+      toggle={show => <div>
+            <a href="https://planets-ebag.glitch.me/" target="_blank" rel="noopener noreferrer" ><h2>Solar System VR</h2></a>
         <img src={solarSystem} alt="Solar System in VR"></img>
-        <button onClick={setModalOpen}>See more</button>
+        <button onClick={show}>See more</button>
+      </div>}
+      content={hide => (
+        <Modal
+            isOpen={true}
+                >
+                    <img src={solarSystem} alt="Solar System in VR"></img>
+
+                    <button onClick={hide}>Close</button>
+                </Modal>
+        
+      )}
+    />
+        {/* <a href="https://planets-ebag.glitch.me/" target="_blank" rel="noopener noreferrer" ><h2>Solar System VR</h2></a>
+        <img src={solarSystem} alt="Solar System in VR"></img>
+        <button onClick={show}>See more</button>
             <Modal
-                isOpen={modalOpen}
-                // onRequestClose={!modalOpen}
-                parentSelector={() => document.getElementById("solarsystem")}>
+                isOpen={true}
+                >
                     <img src={solarSystem} alt="Solar System in VR"></img>
 
                     <button onClick={closeModal}>Close</button>
-                </Modal>
+                </Modal> */}
     </PROJECT>
-    <PROJECT id='Gblog'>
+    
+    {/* <PROJECT id='Gblog'>
         <a href="https://gabegatsbyblog.netlify.com/" target="_blank" rel="noopener noreferrer" ><h2>Gatsby Blog</h2></a>
         <img src={gatsbyBlog} alt="Blog made with Gatsby"></img>
         <button onClick={setModalOpen}>See more</button>
@@ -138,7 +196,7 @@ return (
                     <img src={hangman} alt="Hangman Game"></img>
                     <button onClick={closeModal}>Close</button>
                 </Modal>
-    </PROJECT>
+    </PROJECT> */}
   </PROJECTS>
 )}
 console.log(Bagjav)
