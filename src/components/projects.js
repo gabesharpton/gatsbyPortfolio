@@ -79,8 +79,14 @@ return (
         isOpen={true}>
           
           <h2>Movie DB</h2>
-          <p>So the LORD God had not caused it to rain upon the earth. And it was very good. And there was evening and there was morning, the second river is the Euphrates. Now the serpent was more crafty than any other wild animal that the LORD God caused a deep sleep to fall upon the man, You may freely eat of every kind. And it was very good. And there was evening and there was morning, the second river is Tigris, which flows east of Assyria. And the LORD God said, See, the man should be alone; I will make him a helper as his partner. For God knows that when you eat of the fruit of the third river is Tigris, which flows east of Assyria. And the fourth river is the Euphrates. God set them in the dome from the garden of Eden, to till the ground from which he was taken. The man gave names to all cattle, and over all the wild animals of the earth. The name of the sea and over the cattle, and over all the wild animals of the earth. So out of the garden, and the tree of life, I have given every green plant for food.</p>
-          <p>So the LORD God had not caused it to rain upon the earth. And it was very good. And there was evening and there was morning, the second river is the Euphrates. Now the serpent was more crafty than any other wild animal that the LORD God caused a deep sleep to fall upon the man, You may freely eat of every kind. And it was very good. And there was evening and there was morning, the second river is Tigris, which flows east of Assyria. And the LORD God said, See, the man should be alone; I will make him a helper as his partner. For God knows that when you eat of the fruit of the third river is Tigris, which flows east of Assyria. And the fourth river is the Euphrates. God set them in the dome from the garden of Eden, to till the ground from which he was taken. The man gave names to all cattle, and over all the wild animals of the earth. The name of the sea and over the cattle, and over all the wild animals of the earth. So out of the garden, and the tree of life, I have given every green plant for food.</p>
+          <p>This is a project I made to get better at pulling data from an API while using React JS. I pulled the data from TheMovieDB(TMBD) and did not show the files with the API calls as my API Key is attached. If you would like to see how I will gladly explain and show you the actual files. There is 2 components not pushed to git and it is a MoviesList and MovieDetail, List shows a grid view of movie posters and Detail shows the single movie detail. I also added React Overdrive for the animation. </p>
+          <h3>Tech used:</h3>
+          <ul>
+              <li>React</li>
+              <li>React Overdrive</li>
+              <li>API Calls</li>
+          </ul>
+          <a href="https://github.com/gabesharpton/MovieDB" target="_blank" rel="noopener noreferrer" ><h2>Check out my source code here!</h2></a>
           <button onClick={hide}>Close</button>
         </Modal>
       )}
@@ -99,7 +105,7 @@ return (
           <h3>Gatsby Blog</h3>
           <p>This is a blog site I made while learning Gatsby. It really opened my eyes to how great Gatsby can be for making dynamically generated pages. All of the posts on the site are ones from my Dev.to blog site and they are all markdown files. Which made it even easier for me because the Dev.to blogs are written in markdown!</p>
           <p>I also learned GraphQL and use it to generate a new page for each markdown file in the folder posts. Gatsby will be my go to for any SPA personal projects after working with this. And you gotta love the speed of that Gatsby Link!</p>
-          <h2>Tech used</h2>
+          <h3>Tech used</h3>
           <ul>
               <li>Gatsby</li>
               <li>React</li>
@@ -126,6 +132,14 @@ return (
       content={hide => (
         <Modal isOpen={true}>
                 <h3>Solar VR</h3>
+                <p>This is a small project I made after learning about a tech called A-Frame. It is an in browser Virtual Reality app. This was a fun side project that took me a few hours to put together. It was very interesting to see A-Frame in action and the majority of the code is written in HTML element with an A-Frame script tag. I used Glitch as a Repl to see what was happening in the browser.</p>
+                <h3>Tech used:</h3>
+                <ul>
+                    <li>A-Frame</li>
+                    <li>HTML</li>
+                </ul>
+                <a href="https://planets-ebag.glitch.me/" target="_blank" rel="noopener noreferrer" ><h2>Checkout the live app here!</h2></a>
+                <a href="https://github.com/gabesharpton/A-frame-solarSystem" target="_blank" rel="noopener noreferrer" ><h2>Checkout the source code here!</h2></a>
                     <button onClick={hide}>Close</button>
                 </Modal>
         
@@ -142,8 +156,14 @@ return (
       </div>}
       content={hide => (
         <Modal isOpen={true}>
-                    
                         <h3>Bagjav</h3>
+                        <p>This is a React App I made as my Capstone project for my General Assembly Immersive course. The game is a card game I made up with a couple of my good friends. And while I still havnt worked out the kinks, it is still a very minimal viable product. It allows you to chose a card and with the buttons at the top the other players match if they have that card and places as many in the pile as they have. This project taught me a lot about how to deal with state and comparing elements of state to one another.</p>
+                        <h3>Tech used:</h3>
+                        <ul>
+                            <li>React</li>
+                        </ul>
+                        <a href="https://gabesharpton.github.io/Bagjav/" target="_blank" rel="noopener noreferrer" ><h2>Checkout the live app here!</h2></a>
+                        <a href="https://github.com/gabesharpton/Bagjav" target="_blank" rel="noopener noreferrer" ><h2>Checkout the source code here!</h2></a>
                     <button onClick={hide}>Close</button>
                 </Modal>
         
@@ -160,7 +180,16 @@ return (
       content={hide => (
         <Modal isOpen={true}>
                    
-                        <h3>Backend</h3>
+                        <h3>Bagjav</h3>
+                        <p>This is the first backend project I made during my coding Bootcamp. It is a fitness tracker that allows you to add different workouts and then allows you to add different reps or amount of weight you are using. This is made with Express and uses handlebars as the views and was deployed to Heroku. It uses a MVC architecture and has full CRUD capability.</p>
+                        <h3>Tech used:</h3>
+                        <li>MongoDB</li>
+                        <li>Express</li>
+                        <li>Mongoose</li>
+                        <li>Handlebars</li>
+
+                        <a href="https://fitness-planner-gls.herokuapp.com/" target="_blank" rel="noopener noreferrer" ><h2>Checkout the live app here!</h2></a>
+                        <a href="https://github.com/gabesharpton/Express-App" target="_blank" rel="noopener noreferrer" ><h2>Checkout the source code here!</h2></a>
                     <button onClick={hide}>Close</button>
                 </Modal>
         
@@ -176,8 +205,16 @@ return (
         </div>}
         content={hide => (
             <Modal isOpen={true}>
-                       
                             <h3>Hangman</h3>
+                            <p>This was my first project I made during my coding bootcamp. It is the classic Hangman game that you can play in the browser. One cool thing I learned in this project was how to use key codes so that the player can type on their keyboard to guess letters instead of having to push buttons on a clunky keyboard. This was good practice for using DOM elements as well as comparing letters to a word.</p>
+                            <h3>Tech used:</h3>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Vanilla Javascript</li>
+                            </ul>
+                            <a href="https://gabesharpton.github.io/Hangman-Javascript-Game/" target="_blank" rel="noopener noreferrer" ><h2>Checkout the live app here!</h2></a>
+                            <a href="https://github.com/gabesharpton/Hangman-Javascript-Game" target="_blank" rel="noopener noreferrer" ><h2>Checkout the source code here!</h2></a>
                         <button onClick={hide}>Close</button>
                     </Modal>
             

@@ -11,9 +11,12 @@ grid-template-columns: auto auto;
 text-align: center;
 background-color: cornflowerblue;
 justify-content: space-evenly;
+padding: 5%;
+
 
 a {
     font-size: 3vw;
+    margin: 4%;
     
 }
 h3{
