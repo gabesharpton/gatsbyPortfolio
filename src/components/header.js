@@ -13,7 +13,7 @@ const Head = styled.div`
 
 const Header = () => (
   <Head>
-    <h1 id="title" style={{ paddingTop: 20, color: "peachpuff" }}>
+    <h1 id="title" style={{ paddingTop: 20, color: "#edbc64" }}>
       Gabriel Sharpton || Full-Stack Developer
     </h1>
     <Image style={{ height: `350px`, width: `300px` }} />
