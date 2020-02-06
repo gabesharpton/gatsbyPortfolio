@@ -3,6 +3,8 @@ module.exports = {
     title: `Gabriel Sharpton Portfolio site`,
     description: `Gabe Sharpton portfolio site built with Gatsby. Come check it out!`,
     author: `@gabesharpton`,
+    lang:`en`,
+    meta:[{title: "Gabesharpton",description: "Gabe Sharpton portfolio site built with Gatsby. Come check it out!"}],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

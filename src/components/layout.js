@@ -6,6 +6,7 @@ import Languages from './languages'
 import Header from "./header"
 import Projects from "./projects"
 import Footer from "./footer"
+import SEO from './seo'
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -32,6 +33,8 @@ console.log(data)
 
   return (
       <LayoutBody>
+        <SEO title='Gabe Sharpton Portfolio'
+              description='Gatsby portfolio' />
         <Header />
         <AboutMe />
         <Languages />
