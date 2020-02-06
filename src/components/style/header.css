@@ -20,16 +20,27 @@ h1#title {
 a {
     text-decoration: none;
     font-size: 8vmax;
+    
 }
 a#linkedin-profile {
     color: deepskyblue;
+    padding: 4%;
 }
 a#github-profile {
     color: black;
+    padding: 4%;
 }
 a#email-address {
     color: red;
+    padding: 4%;
+     
 }
+div#profiles {
+    display: flex;
+    justify-content: center;
+    padding: 4%;
+}
+
 .modal-background  {
     position: absolute;
     top: 40px;
@@ -44,7 +55,4 @@ a#email-address {
     outline: none;
     padding: 20px;
 
-}
-@media only screen and (max-width: 800px) {
-    
 }
