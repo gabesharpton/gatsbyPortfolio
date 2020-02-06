@@ -24,21 +24,21 @@ a {
 }
 a#linkedin-profile {
     color: deepskyblue;
-    padding: 4%;
+    padding: 0 4%;
 }
 a#github-profile {
     color: black;
-    padding: 4%;
+    padding: 0 4%;
 }
 a#email-address {
     color: red;
-    padding: 4%;
+    padding: 0 4%;
      
 }
 div#profiles {
     display: flex;
     justify-content: center;
-    padding: 4%;
+    
 }
 
 .modal-background  {

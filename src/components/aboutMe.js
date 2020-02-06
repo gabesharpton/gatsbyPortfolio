@@ -25,7 +25,7 @@ const PARA = styled.p`
   
   @media screen and (max-width: 800px){
     flex-wrap: wrap;
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 `;
 const AVA = styled.img`

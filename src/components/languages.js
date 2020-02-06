@@ -11,12 +11,15 @@ import {
   DiDjango,
   DiNodejs,
   DiMysql,
-  DiPostgresql
+  DiPostgresql,
+  DiPython
 } from "react-icons/di";
-import { FaVuejs, FaBootstrap, FaLess } from "react-icons/fa";
+import { FaVuejs, FaBootstrap, FaLess, FaPython } from "react-icons/fa";
 
 const Intro = styled.h2`
-  font-size: 2.5rem;
+  font-size: 3rem;
+  margin-bottom: 7%;
+  font-family: "acme";
 `;
 const Lang = styled.div`
   background-color: mintcream;
@@ -109,7 +112,7 @@ const Languages = () => (
       </div>
       <div>
         <DiDjango className="icons" style={{ color: "black" }} />
-        <LName>DJango</LName>
+        <LName>Django</LName>
       </div>
       <div>
         <DiNodejs className="icons" style={{ color: "chartreuse" }} />
@@ -117,11 +120,15 @@ const Languages = () => (
       </div>
       <div>
         <DiPostgresql className="icons" style={{ color: "darkblue" }} />
-        <LName>PostreSQL</LName>
+        <LName>PostgreSQL</LName>
       </div>
       <div>
         <DiMysql className="icons" style={{ color: "darkslateblue" }} />
         <LName>MySQL</LName>
+      </div>
+      <div>
+        <DiPython className="icons" style={{ color: "#4B8BBE" }} />
+        <LName>Python</LName>
       </div>
     </Back>
   </Lang>
