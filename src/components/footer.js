@@ -30,7 +30,7 @@ const FOOT = styled.div`
 const Footer = () => (
   <FOOT id="foot">
     <h2>Contact Info:</h2>
-    <a id="resume" href="resume.pdf" download>
+    <a id="resume" href="/documents/resume.PDF" download>
       <button style={{textDecoration: 'underline'}}>Download my resume here!</button>
     </a>
     <h3>Email: Gabriel.Sharpton@gmail.com</h3>
