@@ -14,7 +14,6 @@ const Initial = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    
   }
 `;
 const PARA = styled.p`
