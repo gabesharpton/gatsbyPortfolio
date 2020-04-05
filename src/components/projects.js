@@ -6,6 +6,7 @@ import gatsbyBlog from "../images/gatsbyBlog.png";
 import hangman from "../images/hangman.png";
 import solarSystem from "../images/solarSystem.png";
 import movieDB from "../images/movieDB.png";
+// import daysrepo from "../images/daysrepo.png";
 import Modal from "react-modal";
 
 const PROJECTS = styled.div`
@@ -315,7 +316,7 @@ const Projects = () => {
             toggle={show => (
               <div>
                 <a
-                  href="https://gabesharpton.github.io/Hangman-Javascript-Game/"
+                  href="https://github.com/gabesharpton/100daysofcode"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -344,7 +345,7 @@ const Projects = () => {
                   <li>Vanilla Javascript</li>
                 </ul>
                 <a
-                  href="https://gabesharpton.github.io/Hangman-Javascript-Game/"
+                  href="https://github.com/gabesharpton/100daysofcode"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -362,6 +363,42 @@ const Projects = () => {
             )}
           />
         </PROJECT>
+        
+        {/* <PROJECT id="100days">
+          <ToggleContent
+            toggle={show => (
+              <div>
+                <a
+                  href="https://github.com/gabesharpton/100daysofcode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h2>100 Days of Code</h2>
+                </a>
+                <img src={daysrepo} alt="Hangman Game"></img>
+                <button onClick={show}>See more</button>
+              </div>
+            )}
+            content={hide => (
+              <Modal className="modal-background" isOpen={true}>
+                <h3>100 Days of Code</h3>
+                <p>
+                  This is a Github Repo that I have that contains all of my 100 Days of Code Markdown Blogs. I started the challenge during the COVID-19 quarentine to help expand my skills and give me something to look forward to every day. I am a life long learner so a challenge that is all about learning something new everyday is right up my alley. I try to challenge myself by learning something new each day or to brush up on a skill. It has been a fun experience and cant wait to see it grow to day 100!
+                </p>
+                
+                <a
+                  href="https://github.com/gabesharpton/100daysofcode"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <h2>Checkout the repo here!</h2>
+                </a>
+               
+                <button onClick={hide}>Close</button>
+              </Modal>
+            )}
+          />
+        </PROJECT> */}
       </PROJECTS>
     </>
   );
